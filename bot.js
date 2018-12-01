@@ -330,7 +330,7 @@ ${prefix}avatar - See Your Avatar
 ${prefix}play <title|URL> - plays the provided song
 ${prefix}skip - votes to skip the current song
 ${prefix}stop - stops the current song and clears the queue
-${prefix}volume [0-200]`` - sets or shows volume
+${prefix}volume [0-200] - sets or shows volume
 ${prefix}pause - pauses the current song
 ${prefix}resume - resumed the current song
 ${prefix}queue - shows the current Songs
