@@ -24,9 +24,9 @@ const prefix = "1";
 /////////////////////////
 ////////////////////////
 
-bot.on("ready", async () => {
-	console.log(`Bot is ready! ${bot.user.username}`);
-	bot.user.setActivity(`Type ${prefix}play`, {type: 'PLAYING'})
+client.on("ready", async () => {
+	console.log(`Bot is ready! ${client.user.username}`);
+	client.user.setActivity(`Type ${prefix}play`, {type: 'PLAYING'})
 
 
 	/*try {
