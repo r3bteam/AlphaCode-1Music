@@ -320,7 +320,7 @@ function play(guild, song) {
 
 client.on('message', message => {
     if (message.content.startsWith(prefix + 'help')) {
-        message.channel.send(`**${client.user.username}** commands:
+        message.channel.send(` commands:
 
 ``${prefix}ping`` - checks the bot's latency  
 ``${prefix}avatar`` - See Your Avatar
