@@ -320,22 +320,21 @@ function play(guild, song) {
 
 client.on('message', message => {
     if (message.content.startsWith(prefix + 'help')) {
-        message.channel.send(` commands:
+        message.channel.send(`commands:
 
-``${prefix}ping`` - checks the bot's latency  
-``${prefix}avatar`` - See Your Avatar
+${prefix}ping - checks the bot's latency  
+${prefix}avatar - See Your Avatar
 
       __Music__
 
-``${prefix}play`` <title|URL> - plays the provided song
-``${prefix}skip`` - votes to skip the current song
-``${prefix}stop`` - stops the current song and clears the queue
-``${prefix}volume [0-200]`` - sets or shows volume
-``${prefix}pause`` - pauses the current song
-``${prefix}resume`` - resumed the current song
-``${prefix}queue`` - shows the current Songs
-``${prefix}np`` - shows the current Song
-`);
+${prefix}play <title|URL> - plays the provided song
+${prefix}skip - votes to skip the current song
+${prefix}stop - stops the current song and clears the queue
+${prefix}volume [0-200]`` - sets or shows volume
+${prefix}pause - pauses the current song
+${prefix}resume - resumed the current song
+${prefix}queue - shows the current Songs
+${prefix}np - shows the current Song`);
     }
 });
 const devs = ["479090634813341696" , "315477215620104193"]
