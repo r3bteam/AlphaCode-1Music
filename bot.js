@@ -26,7 +26,6 @@ const prefix = "1";
 
 client.on("ready", async () => {
 	console.log(`Bot is ready! ${client.user.username}`);
-	client.user.setActivity(`Type ${prefix}play`, {type: 'PLAYING'})
 
 
 	/*try {
@@ -214,7 +213,7 @@ client.on('message', async msg => {
 
 		if (!msg.member.voiceChannel) return msg.channel.send("**You Must be in a Voice channel to Run the Music commands!**");
 		if (!serverQueue) return msg.channel.send('**You only can use this command while music is playing!**');
-        if (!args[1]) return msg.channel.send(`The bot volume is **${serverQueue.volume}**:loud_sound: `);
+        if (!args[1]) return msg.channel.send(`The bot volume is :**${serverQueue.volume}**:loud_sound: `);
         
 		serverQueue.volume = args[1];
         serverQueue.connection.dispatcher.setVolumeLogarithmic(args[1] / 50);
