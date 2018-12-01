@@ -24,18 +24,6 @@ const prefix = "1";
 /////////////////////////
 ////////////////////////
 
-client.on("ready", async () => {
-	console.log(`Bot is ready! ${client.user.username}`);
-
-
-	/*try {
-		let link = await bot.generateInvite(["ADMINISTRATOR"]);
-		console.log(link);
-	} catch (e) {
-		console.log(e.stack);
-	}*/
-
-});
 
 client.on('message', async msg =>{
 	if (msg.author.bot) return undefined;
