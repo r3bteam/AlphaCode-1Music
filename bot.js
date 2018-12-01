@@ -23,7 +23,19 @@ const client = new Discord.Client({disableEveryone: true});
 const prefix = "1";
 /////////////////////////
 ////////////////////////
+client.on("ready", async () => {
+	console.log(`Bot is ready! ${client.user.username}`);
+	client.user.setActivity(`Type ${prefix}play`, {type: 'PLAYING'})
 
+
+	/*try {
+		let link = await bot.generateInvite(["ADMINISTRATOR"]);
+		console.log(link);
+	} catch (e) {
+		console.log(e.stack);
+	}*/
+
+});
 
 client.on('message', async msg =>{
 	if (msg.author.bot) return undefined;
